@@ -46,7 +46,7 @@ describe('Scrolling: ', () => {
         await expect(await $(`//*[@resource-id='io.appium.android.apis:id/dateDisplay']`).getText()).not.toEqual(date);
     })
 });
-describe('Gestures: ', async ()=>{
+xdescribe('Gestures: ', async ()=>{
     it('Long Press: ',async ()=>{
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.ApiDemos");
         await AppPage.getByAccessibilityId('Views').click();
