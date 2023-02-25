@@ -2,7 +2,7 @@ const path = require('path');
 const {config}  = require('./wdio.shared.conf');
 
 config.port = 4723;
-config.specs = ['/Users/shreya.tulsyan/Documents/GitCodes/FuncTesting/test/specs/ios/todo.ios.spec.js'];
+config.specs = [path.join(process.cwd(), "./test/specs/ios/todo.ios.spec.js")];
 config.capabilities = [
     {   
         platformName: "iOS",
@@ -12,5 +12,6 @@ config.capabilities = [
         "appium:app": path.join(process.cwd(), "./app/iOS/MVCTodo.app")
     }
 ]
+config.services = ['appium'],
 exports.config=config;
 
