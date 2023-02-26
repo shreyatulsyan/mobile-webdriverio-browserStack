@@ -10,6 +10,7 @@ describe('Scrolling: ', () => {
     it('Vertical Scroll using UIScrollable [scrollToEnd]', async () => {
         await AppPage.getByAccessibilityId('App').click();
         await AppPage.getByAccessibilityId('Activity').click();
+        await driver.saveScreenshot('ss1.png');
         //scroll to end will scroll to end , first param says how many time to scroll and second param say speed
         await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollToEnd(1,5)')
         await AppPage.getByAccessibilityId('Secure Surfaces').click();

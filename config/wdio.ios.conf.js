@@ -13,5 +13,10 @@ config.capabilities = [
     }
 ]
 config.services = ['appium'],
+config.reporters= [['allure', {
+    outputDir: 'allure-results',
+    disableWebdriverStepsReporting: false,
+    disableWebdriverScreenshotsReporting: false,
+}]],
 exports.config=config;
 

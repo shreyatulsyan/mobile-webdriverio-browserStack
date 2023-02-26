@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Feb 26 01:38:28 IST 2023","Sun Feb 26 01:38:32 IST 2023","4037","","Scrolling: ","","Scrolling: ","Vertical Scroll using UIScrollable [scrollToEnd]","Vertical Scroll using UIScrollable [scrollToEnd]",""
+"passed","Sun Feb 26 01:38:48 IST 2023","Sun Feb 26 01:38:53 IST 2023","5875","","Scrolling: ","","Scrolling: ","Change the date in Date Picker","Change the date in Date Picker",""
+"passed","Sun Feb 26 01:38:32 IST 2023","Sun Feb 26 01:38:40 IST 2023","8706","","Scrolling: ","","Scrolling: ","Vertical Scroll using UIScrollable [scrollTextIntoView]","Vertical Scroll using UIScrollable [scrollTextIntoView]",""
+"passed","Sun Feb 26 01:38:40 IST 2023","Sun Feb 26 01:38:44 IST 2023","3332","","Scrolling: ","","Scrolling: ","Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollToEnd]","Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollToEnd]",""
+"skipped","Sun Feb 26 01:38:53 IST 2023","Sun Feb 26 01:38:53 IST 2023","0","","Gestures: ","","Gestures: ","Long Press: ","Long Press: ",""
+"passed","Sun Feb 26 01:38:44 IST 2023","Sun Feb 26 01:38:48 IST 2023","3875","","Scrolling: ","","Scrolling: ","Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollForward]","Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollForward]",""
+"passed","Sun Feb 26 01:38:25 IST 2023","Sun Feb 26 01:38:28 IST 2023","3055","","Starting app","","Starting app","Start app","Start app",""

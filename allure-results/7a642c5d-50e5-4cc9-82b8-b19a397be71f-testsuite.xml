@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1677354678935' stop='1677354681078'>
+    <name>Starting app</name>
+    <title>Starting app</title>
+    <test-cases>
+        <test-case start='1677354678936' status='passed' stop='1677354681077'>
+            <name>Start app</name>
+            <title>Start app</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='Pixel 5 API 30 11.0-11'/>
+            </parameters>
+            <steps>
+                <step start='1677354678938' status='passed' stop='1677354679412'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1b9554d1-dd29-4dc7-a87b-ba05d9a0fe0d-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='b549362a-14ea-4343-979e-3723506933b3-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1677354679418' status='passed' stop='1677354680402'>
+                    <name>POST /session/:sessionId/element/00000000-0000-0332-ffff-ffff0000000c/click</name>
+                    <title>POST /session/:sessionId/element/00000000-0000-0332-ffff-ffff0000000c/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677354680402' status='passed' stop='1677354680457'>
+                    <name>POST /session/:sessionId/appium/device/app_installed</name>
+                    <title>POST /session/:sessionId/appium/device/app_installed</title>
+                    <attachments>
+                        <attachment title='Request' source='afff0686-8923-44c7-9e33-f2d66e7d0565-attachment.json' type='application/json' size='39'/>
+                        <attachment title='Response' source='29f647a8-40f8-4c94-a914-5f000965e226-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1677354680458' status='passed' stop='1677354681077'>
+                    <name>POST /session/:sessionId/back</name>
+                    <title>POST /session/:sessionId/back</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
