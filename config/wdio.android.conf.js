@@ -1,5 +1,4 @@
 const path = require('path');
-//const allure = require('allure-commandline')
 const config  = require('./wdio.shared.conf');
 config.port = 4723;
 config.specs = [path.join(process.cwd(), './test/specs/android/android.spec.js')];
@@ -12,8 +11,12 @@ config.capabilities = [
         "appium:app": path.join(process.cwd(), "./app/android/ApiDemos-debug.apk")
     }
 ];
-config.services = ['appium'];
-config.reporters = ['dot','spec'],
+config.services = [
+    ['appium', {
+        command : 'appium'
+    }]
+];
+config.reporters = ['spec'],
 
 
 exports.config=config;

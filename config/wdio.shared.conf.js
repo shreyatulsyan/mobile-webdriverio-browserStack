@@ -18,6 +18,11 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     },
+    services : [
+        ['appium', {
+            command : 'appium'
+        }]
+    ],
      afterTest: async function({ error}) {
         if (error) {
             await browser.takeScreenshot();
