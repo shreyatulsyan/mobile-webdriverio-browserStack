@@ -4,6 +4,7 @@ describe('Starting app', () => {
         await AppPage.getByAccessibilityId('App').click();
         await driver.isAppInstalled('io.appium.android.apis')
         await browser.back();
+        await expect(true);
     })
 });
 describe('Scrolling: ', () => {
@@ -47,7 +48,7 @@ describe('Scrolling: ', () => {
         await expect(await $(`//*[@resource-id='io.appium.android.apis:id/dateDisplay']`).getText()).not.toEqual(date);
     })
 });
-xdescribe('Gestures: ', async ()=>{
+describe('Gestures: ', async ()=>{
     it('Long Press: ',async ()=>{
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.ApiDemos");
         await AppPage.getByAccessibilityId('Views').click();

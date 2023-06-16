@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//*[@resource-id='io.appium.android.apis:id/dateDisplay']"
-}
