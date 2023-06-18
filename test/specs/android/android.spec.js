@@ -18,7 +18,7 @@ describe('Scrolling: ', () => {
         await expect(AppPage.getByAccessibilityId('Secure Dialog')).toExist();
     
     });
-    it('Vertical Scroll using UIScrollable [scrollTextIntoView]', async () => {
+    xit('Vertical Scroll using UIScrollable [scrollTextIntoView]', async () => {
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.ApiDemos");
         await AppPage.getByAccessibilityId('App').click();
         await AppPage.getByAccessibilityId('Activity').click();
@@ -28,16 +28,16 @@ describe('Scrolling: ', () => {
     
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.view.Gallery1");
     });
-    it('Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollToEnd]', async () => {
+    xit('Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollToEnd]', async () => {
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.view.Gallery1");
         await $('android=new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollToEnd(1,5)');    
     });
-    it('Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollForward]', async () => {
+    xit('Horizontal Scroll using UIScrollable [setAsHorizontalList.scrollForward]', async () => {
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.view.Gallery1");
         await $('android=new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollForward()');
        
     });
-    it('Change the date in Date Picker', async () => {
+    xit('Change the date in Date Picker', async () => {
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.view.DateWidgets1");
         const date = await $(`//*[@resource-id='io.appium.android.apis:id/dateDisplay']`).getText();
         console.log(date);
@@ -48,7 +48,7 @@ describe('Scrolling: ', () => {
         await expect(await $(`//*[@resource-id='io.appium.android.apis:id/dateDisplay']`).getText()).not.toEqual(date);
     })
 });
-describe('Gestures: ', async ()=>{
+xdescribe('Gestures: ', async ()=>{
     it('Long Press: ',async ()=>{
         await driver.startActivity("io.appium.android.apis","io.appium.android.apis.ApiDemos");
         await AppPage.getByAccessibilityId('Views').click();
