@@ -1,21 +1,24 @@
-
 exports.config = {
     port : 4723,
     runner: 'local', 
-    exclude: [
-        // 'path/to/excluded/files'
-    ],
+    mochaOpts: {
+        ui: 'bdd',
+        timeout: 99999999
+    },
     maxInstances: 10,
     logLevel: 'info',
     bail: 0,
     baseUrl: 'http://localhost',
-    waitforTimeout: 10000,
+    waitforTimeout: 60000,
     connectionRetryTimeout: 120000, 
     connectionRetryCount: 3,
     framework: 'mocha',
-    reporters: ['dot','spec'],
-    mochaOpts: {
-        ui: 'bdd',
-        timeout: 60000
-    },
+    reporters: ['spec'],
+    services : [
+        ['appium', {
+            command : 'appium',
+            logPath : './logs',
+        }]
+    ],
+    
 }
