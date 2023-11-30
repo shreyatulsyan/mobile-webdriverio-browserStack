@@ -12,5 +12,8 @@
         "es6": true,
         "mocha": true,
         "node": true
+    },
+    "globals": {
+        "wdioExpect": true,
     }
 }
