@@ -6,8 +6,8 @@ This repo consist of android, iOS and Web automation.
 ##### iOS: App used:  UIKitCatalog, MVCTodo
 ##### Web: webdriverio.com
 
-Cloud: Browserstack
-Framework: Mocha.
+#### Cloud: Browserstack
+#### Framework: Mocha.
 
 
 
